@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./CSS/bootstrap.css" />
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <!-- Navbar  -->
@@ -29,8 +29,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Login <span class="sr-only">(current)</span></a
+              <a
+                class="nav-link"
+                data-toggle="modal"
+                data-target="#signupModal"
+              >
+                Sign up <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" data-toggle="modal" data-target="#loginModal">
+                login <span class="sr-only">(current)</span></a
               >
             </li>
           </ul>
@@ -39,8 +48,6 @@
     </nav>
 
     <div class="container pt-5">
-
-
       <div class="row post-row">
         <div class="col-9">
           <h2>
@@ -63,53 +70,7 @@
           />
         </div>
       </div>
-        <div class="row post-row">
-        <div class="col-9">
-          <h2>
-            Title.
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In eaque
-            beatae corrupti possimus ipsam labore accusantium minima autem dicta
-            dolor neque earum harum illum quod veritatis, blanditiis perferendis
-            omnis. Magnam?
-          </p>
-        </div>
-
-        <div class="col-3">
-          <img
-            src="./assets/img/download.png"
-            width="150px"
-            height="150px"
-            alt=""
-          />
-        </div>
-      </div>
-
-
       <div class="row post-row">
-        <div class="col-9">
-          <h2>
-            Title.
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In eaque
-            beatae corrupti possimus ipsam labore accusantium minima autem dicta
-            dolor neque earum harum illum quod veritatis, blanditiis perferendis
-            omnis. Magnam?
-          </p>
-        </div>
-
-        <div class="col-3">
-          <img
-            src="./assets/img/download.png"
-            width="150px"
-            height="150px"
-            alt=""
-          />
-        </div>
-      </div>
-        <div class="row post-row">
         <div class="col-9">
           <h2>
             Title.
@@ -154,7 +115,7 @@
           />
         </div>
       </div>
-        <div class="row post-row">
+      <div class="row post-row">
         <div class="col-9">
           <h2>
             Title.
@@ -177,7 +138,208 @@
         </div>
       </div>
 
+      <div class="row post-row">
+        <div class="col-9">
+          <h2>
+            Title.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In eaque
+            beatae corrupti possimus ipsam labore accusantium minima autem dicta
+            dolor neque earum harum illum quod veritatis, blanditiis perferendis
+            omnis. Magnam?
+          </p>
+        </div>
 
+        <div class="col-3">
+          <img
+            src="./assets/img/download.png"
+            width="150px"
+            height="150px"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row post-row">
+        <div class="col-9">
+          <h2>
+            Title.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In eaque
+            beatae corrupti possimus ipsam labore accusantium minima autem dicta
+            dolor neque earum harum illum quod veritatis, blanditiis perferendis
+            omnis. Magnam?
+          </p>
+        </div>
+
+        <div class="col-3">
+          <img
+            src="./assets/img/download.png"
+            width="150px"
+            height="150px"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
+
+    <!-- Modals-->
+    <!-- signupModal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id=""
+                  placeholder="Enter your name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">User Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id=""
+                  placeholder="Enter your userName"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Phone number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Enter Phone number"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Enter email"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              Sign up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- login modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Login to register
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id=""
+                  placeholder="Enter your username"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Enter your password"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Confirm Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Enter your password"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jq.js"></script>
+    <script src="./js/pop.js"></script>
+    <script src="./js/bootstrap.js"></script>
   </body>
 </html>
